@@ -1,24 +1,78 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## usersテーブル
 
-Things you may want to cover:
+| Column             | Type   | Options                   |
+| ------------------ | ------ | ------------------------- |
+| nickname           | string | null: false               |
+| email              | string | null: false, unique: true |
+| encrypted_password | string | null: false               |
+| last_name          | string | null: false               |
+| first_name         | string | null: false               |
 
-* Ruby version
+### Association
+- has_many :purchases
+- has_many :carts
 
-* System dependencies
+## cartsテーブル
 
-* Configuration
+| Column   | Type       | Options                        |
+| -------- | ---------- | ------------------------------ |
+| user     | references | null: false, foreign_key: true |
+| purchase | references | null: false, foreign_key: true |
 
-* Database creation
+### Association
+- has_many :item_carts
+- belongs_to :user
+- has_one :purchase
 
-* Database initialization
+## cart_itemsテーブル
 
-* How to run the test suite
+| Column      | Type       | Options                        |
+| ----------- | ---------- | ------------------------------ |
+| quantity_id | integer    | null: false                    |
+| size_id     | integer    |                                |
+| item        | references | null: false, foreign_key: true |
+| cart        | references | null: false, foreign_key: true |
 
-* Services (job queues, cache servers, search engines, etc.)
+### Association
+- has_one :items
+- belongs_to :cart
 
-* Deployment instructions
+## itemsテーブル
 
-* ...
+| Column      | Type       | Options     |
+| ----------- | ---------- | ----------- |
+| price       | integer    | null: false |
+| quantity_id | integer    | null: false |
+| size_id     | integer    |             |
+
+### Association
+- belongs_to :cart_item
+
+## purchasesテーブル
+
+| Column        | Type       | Options                        |
+| ------------- | ---------- | ------------------------------ |
+| item          | references | null: false, foreign_key: true | 
+| user          | references | null: false, foreign_key: true | 
+
+### Association
+- belongs_to :user
+- belongs_to :cart
+- has_one :address
+
+## addressesテーブル
+
+| Column        | Type       | Options                        |
+| ------------- | ---------- | ------------------------------ |
+| post_code     | string     | null: false                    |
+| area          | integer    | null: false                    |
+| city          | string     | null: false                    |
+| street        | string     | null: false                    |
+| building_name | string     |                                |
+| phone_number  | string     | null: false                    |
+| purchase      | references | null: false, foreign_key: true | 
+
+### Association
+- belongs_to :purchase
