@@ -16,7 +16,7 @@
 }
 
 .logo-icon {
-  width: 150px;
+  width: 175px;
   height: 150px;
 }
 
@@ -54,9 +54,20 @@
 
 
 .under_bar {
-  background-color: rgb(241, 231, 191);
-  background-image: repeating-linear-gradient(45deg,rgb(3, 70, 3), 10px, transparent 100px);
+  background-color: darkred;
+  background-image: repeating-linear-gradient(45deg,rgb(248, 9, 9), 10px, transparent 100px);
   width: 100%;
+  
+}
+
+.under-bar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100px;
 }
 
+.contact-info {
+  color: white;
+  font-size: large;
+}
