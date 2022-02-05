@@ -2,9 +2,37 @@
   <div class="up_bar">
     <%= render "up_bar" %>
   </div>
+
   <div class="main">
-    
+
+    <div class="team-news">
+      <h2 class="news">
+        <b>TEAM NEWS</b>
+      </h2>
+      <ul class='news-topics'>
+        <li class="topic">
+          <%= link_to "/" do%>
+            <%= image_tag "new-player1.jpeg", class:"topic-image"%>
+            <h3 class="explain">NEWS: 新加入選手の紹介!!</h3>
+          <% end %>
+        </li>
+        <li class="topic">
+          <%= link_to "/" do%>
+            <%= image_tag "match1.jpeg", class:"topic-image"%>
+            <h3 class="explain">NEWS: Match Daysの発表!!</h3>
+          <% end %>
+        </li>
+        <li class="topic">
+          <%= link_to "/" do%>
+            <%= image_tag "team1.jpeg", class:"topic-image"%>
+            <h3 class="explain">NEWS: 新シーズンまで残り１ヶ月!!</h3>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+
   </div>
+
   <div class="under_bar">
     <%= render "under_bar" %>
   </div>
