@@ -148,3 +148,10 @@
   font-size: large;
   font-weight: bold;
 }
+
+
+
+.error_explain {
+  text-align: center;
+  color: aliceblue;
+}
