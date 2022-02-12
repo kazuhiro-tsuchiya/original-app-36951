@@ -6,7 +6,11 @@
     <li>ex.ABC</li>
   </div>
   <div class="login-button">
-    <li><%= link_to "LOGIN", "#", class: "login" %></li>
-    <li><%= link_to "SIGN UP", "#", class: "sign-up" %></li>
+    <% if user_signed_in? %>
+      <%= link_to "LOGOUT", destroy_user_session_path, method: :delete, class: "login" %>
+    <% else %>
+      <%= link_to "LOGIN", new_user_session_path, class: "login" %>
+      <%= link_to "SIGN UP", new_user_registration_path, class: "sign-up" %>
+    <% end %>
   </div>
 </div>
