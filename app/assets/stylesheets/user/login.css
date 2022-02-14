@@ -1,0 +1,130 @@
+.second-up-bar {
+  background-color: darkred;
+  background-image: repeating-linear-gradient(45deg,rgb(248, 9, 9), 10px, transparent 100px);
+  width: 100%;
+  height: 150px;
+}
+
+.second-up-bar-header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.second-logo-icon {
+  width: 175px;
+  height: 150px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.second-team-name {
+  list-style: none;
+  font-size: 70px;
+  color: white;
+  font-family: cursive;
+  padding-top: 15px;
+}
+
+
+
+.registration-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: lightgoldenrodyellow;
+}
+
+.form-wrap {
+  background-color: darkred;
+  background-image: repeating-linear-gradient(45deg,rgb(248, 9, 9), 10px, transparent 100px);
+  width: 50%;
+  border: 3px solid black;
+}
+
+.form-header {
+  text-align: center;
+  padding: 40px;
+}
+
+.form-header-text {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  font-family: cursive;
+  text-shadow: 2px 2px black;
+}
+
+.login-flash-message {
+  text-align: center;
+  color: aliceblue;
+}
+
+.form-group {
+  text-align: center;
+  padding-bottom: 30px;
+  color: white;
+}
+
+.form-text-wrap {
+  color: white;
+  text-shadow: 2px 2px black;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.input-default {
+  width: 50%;
+  height: 40px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.login-btn {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.login-red-btn {
+  cursor: pointer;
+  background-color: lightgrey;
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+  width: 50%;
+  height: 40px;
+  
+}
+
+
+
+
+.second-under-bar {
+  background-color: darkred;
+  background-image: repeating-linear-gradient(45deg,rgb(248, 9, 9), 10px, transparent 100px);
+  width: 100%;
+  
+}
+
+.second-under-bar-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+}
+
+.second-contact-info {
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+
+
+
+.error_explain {
+  text-align: center;
+  color: aliceblue;
+}
