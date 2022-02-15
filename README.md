@@ -43,9 +43,13 @@
 
 | Column      | Type       | Options     |
 | ----------- | ---------- | ----------- |
+| item_name   | string     | null: false |
 | price       | integer    | null: false |
 | quantity_id | integer    | null: false |
 | size_id     | integer    |             |
+
+| user     | references | null: false, foreign_key: true |
+| purchase | references | null: false, foreign_key: true |
 
 ### Association
 - belongs_to :cart_item
