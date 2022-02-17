@@ -1,7 +1,40 @@
 <%= render "devise/shared/second_header" %>
   
-<div>
+<div class="items-sell-main">
+    <h3 class="items-sell-title">商品の情報を入力</h3>
+    <%= form_with model: @item,local: true do |f| %>
 
+      <%#= render 'shared/error_messages', model: f.object %>
+      
+      <div class="img-upload">
+        <div class="weight-bold-text">
+          商品画像
+        </div>
+        <div class="click-upload">
+          <p>
+            クリックしてファイルをアップロード
+          </p>
+          <%= f.file_field :image, id:"item-image" %>
+        </div>
+      </div>
+      
+      <div class="new-items">
+        <div class="weight-bold-text">
+          商品名
+        </div>
+        <%= f.text_area :ite_name, class:"items-text" %>
+      </div>
+
+      <div class="sell-price">
+        <div class="price-content">
+          <div class="price-text">
+            価格            
+          </div>
+          <span class="sell-yen">¥</span>
+          <%= f.text_field :price, class:"price-input", id:"item-price", placeholder:"例）300" %>
+        </div>
+      </div>
+    <% end %>
 
   <div class="under_bar">
     <div class="under-bar-header">
