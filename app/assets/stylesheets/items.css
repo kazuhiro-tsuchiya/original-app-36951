@@ -33,3 +33,68 @@
 .sell-btn {
   cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+.item-show {
+  display: flex;
+  justify-content: center;
+}
+
+.item-box {
+  background-color: white;
+  width: auto;
+  height: 100%;
+  margin: 10px;
+  border: 5px solid black;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.item-box-img {
+  width: 500px;
+  height: 400px;
+}
+
+.name {
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto;
+  width: 50%;
+  background-color: #ffcccc;
+  box-shadow: 0 0 10px 10px #ffcccc;
+  border-radius: 20px;
+}
+
+.item-price-box {
+  padding-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin: auto;
+  width: 50%;
+  background-color: #ffcccc;
+  box-shadow: 0 0 10px 10px #ffcccc;
+  border-radius: 20px;
+}
+
+.item-user-bifurcation {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.item-red-btn {
+  color: gold;
+  font-size: 20px;
+  background-color: red;
+  box-shadow: 0 0 10px 10px red;
+  border-radius: 20px;
+}
