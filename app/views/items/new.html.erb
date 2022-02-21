@@ -1,7 +1,8 @@
 <%= render "devise/shared/second_header" %>
   
 <div class="items-sell-main">
-  <h3 class="items-sell-title">商品の情報を入力</h3>
+  <div class="item-wrap">
+    <h3 class="items-sell-title">商品の情報を入力</h3>
     <%= form_with model: @item, class: "item-registration", local: true do |f| %>
 
       <%= render 'devise/shared/error_messages', model: f.object, resource: @item %>
@@ -22,7 +23,7 @@
         <div class="weight-bold-text">
           商品名
         </div>
-        <%= f.text_area :ite_name, class:"items-text" %>
+        <%= f.text_area :item_name, class:"items-text" %>
       </div>
 
       <div class="sell-price">
@@ -40,7 +41,7 @@
         <%=link_to 'もどる', root_path, class:"back-btn" %>
       </div>
     <% end %>
-
+  </div>
 </div>
 
 <div class="under_bar">
