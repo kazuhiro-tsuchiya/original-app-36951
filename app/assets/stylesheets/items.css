@@ -1,0 +1,23 @@
+.items-sell-main {
+  display: block;
+}
+
+.items-sell-title {
+  text-align: center;
+}
+
+.item-registration {
+  text-align: center;
+}
+
+.img-upload {
+  margin: 30px;
+}
+
+.new-items {
+  margin: 30px;
+}
+
+.sell-price {
+  margin: 30px;
+}
