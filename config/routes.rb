@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   root to: "teams#index"
   resources :teams, only: [:index]
   resources :users, only: [:edit, :update]
-  resources :items
+  resources :items do
+    resources :purchases
+  end
 end
