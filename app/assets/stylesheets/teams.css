@@ -103,6 +103,7 @@ h2 {
   background-color: darkred;
   background-image: repeating-linear-gradient(45deg,rgb(248, 9, 9), 10px, transparent 100px);
   border-bottom: 10px solid black;
+  text-align: center;
 }
 
 .pick-up-items {
@@ -111,8 +112,7 @@ h2 {
 }
 
 .handing-items {
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
 }
 
 .item {

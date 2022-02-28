@@ -35,30 +35,21 @@
       <h2 class="pick-up-items">
         <b>PICK UP ITEMS</b>
       </h2>
+      <% @items.each do |item| %>
       <ul class="handing-items">
         <li class="item">
-          <%= link_to("/", class: "link") do %>
-            <%= image_tag "soccer-ball.jpeg", class:"item-image"%>
+          <%= link_to item_path(item.id), class: "link" do %>
+            <%= image_tag item.image, class:"item-image"%>
             <h3 class="product">
-              サッカーボール
+              <%= item.item_name%>
             </h3>
             <div class="product-price">
-              2500円
-            </div>
-          <% end %>
-        </li>
-        <li class="item">
-          <%= link_to("/", class: "link") do %>
-            <%= image_tag "soccer-boad.jpeg", class:"item-image"%>
-            <h3 class="product">
-              サッカーボード
-            </h3>
-            <div class="product-price">
-              4980円
+              <%= item.price%>
             </div>
           <% end %>
         </li>
       </ul>
+      <% end %>
       <ul class="more-items">
         <li class="all-items">
           <%= link_to("/", class: "link") do %>

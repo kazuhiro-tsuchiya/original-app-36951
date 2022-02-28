@@ -6,7 +6,11 @@
     <li>ex.ABC</li>
   </div>
   <div class="login-button">
-    <% if user_signed_in? %>
+    <% if current_user&.admin? %>
+      <%= link_to "投稿", new_item_path, class: "login" %>
+      <%= link_to current_user.nickname, edit_user_registration_path, class: "login" %>
+      <%= link_to "LOG OUT", destroy_user_session_path, method: :delete, class: "login" %>
+    <% elsif user_signed_in? %>
       <%= link_to current_user.nickname, edit_user_registration_path, class: "login" %>
       <%= link_to "LOG OUT", destroy_user_session_path, method: :delete, class: "login" %>
     <% else %>

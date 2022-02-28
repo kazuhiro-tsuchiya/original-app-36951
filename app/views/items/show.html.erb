@@ -1,0 +1,26 @@
+<%= render "devise/shared/second_header" %>
+
+<div class="item-show">
+  
+    <div class="item-box">
+      <div class="item-img-content">
+        <%= image_tag @item.image ,class:"item-box-img" %>
+      </div>
+      <div class="name">
+        <%= @item.item_name %>
+      </div>
+      <div class="item-price-box">
+          <%= @item.price %>円    
+      </div>
+      <div class="item-user-bifurcation">
+        <% if current_user.admin? %>
+          <%= link_to "購入画面に進む", item_purchases_path(@item.id),class:"item-red-btn"%><br>
+          <%= link_to "削除", item_path(@item.id), method: :delete, class:"item-destroy" %>
+        <% elsif user_signed_in? %>
+          <%= link_to "購入画面に進む", item_purchases_path(@item.id),class:"item-red-btn"%>
+        <% end %>
+      </div>
+    </div>
+</div>
+
+<%= render "devise/shared/second_under" %>
