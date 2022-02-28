@@ -1,0 +1,93 @@
+.transaction-contents {
+  display: flex;
+  justify-content: center;
+}
+
+.transaction-main {
+  background-color: darkred;
+  background-image: repeating-linear-gradient(45deg,rgb(248, 9, 9), 10px, transparent 100px);
+  width: 50%;
+  border: 3px solid black;
+}
+
+.transaction-title-text {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 20px;
+  text-decoration: underline yellow;
+}
+
+.buy-item-info {
+  display: flex;
+  justify-content: center;
+}
+
+.buy-wall {
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  text-align: center;
+  border: 3px solid cornsilk;
+  padding: 10px;
+  background-color: cornsilk;
+}
+
+.buy-item-img { 
+  width: 400px;
+  height: 300px;
+}
+
+.buy-item-text {
+  text-decoration: underline 3px red;
+}
+
+.item-payment-price {
+  text-decoration: underline 3px red;
+}
+
+
+.purchase-info {
+  text-align: center;
+  color: aliceblue;
+  font-size: large;
+  font-weight: bold;
+}
+
+.shipping-address-form {
+  margin-top: 20px;
+}
+
+.info-input-haedline {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px;
+  text-decoration: underline yellow;
+}
+
+.purchase-group {
+  padding: 10px;
+}
+
+.select-box {
+  width: 10%;
+  height: 30px;
+}
+
+.buy-btn {
+  font-weight: bold;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.buy-red-btn {
+  color: black;
+  font-size: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px 10px white;
+  border-radius: 20px;
+  width: 50%;
+  cursor: pointer;
+}
