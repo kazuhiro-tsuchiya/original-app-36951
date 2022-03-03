@@ -11,7 +11,7 @@ class PurchasesController < ApplicationController
     if @purchase_address.valid?
       pay_item
       @purchase_address.save
-      redirect_to root_path
+      redirect_to root_path, notice: '購入完了しました!!お買い上げありがとうございます!!'
     else
       render :index
     end
