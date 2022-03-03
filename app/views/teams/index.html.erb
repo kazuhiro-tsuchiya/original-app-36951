@@ -3,6 +3,10 @@
     <%= render "up_bar" %>
   </div>
 
+  <div class="notifications">
+    <%= notice %>
+  </div>
+
   <div class="main">
 
     <div class="team-news">
@@ -44,7 +48,7 @@
               <%= item.item_name%>
             </h3>
             <div class="product-price">
-              <%= item.price%>
+              <%= item.price%>円
             </div>
           <% end %>
         </li>

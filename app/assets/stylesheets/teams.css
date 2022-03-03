@@ -52,6 +52,12 @@
   font-family: cursive;
 }
 
+.notifications {
+  color: black;
+  text-align: center;  
+  background-color: lightBlue;
+}
+
 
 .main {
   display: block;
