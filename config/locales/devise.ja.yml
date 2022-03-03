@@ -32,6 +32,9 @@ ja:
         item_name: 商品名
         price: 価格
         image: 投稿画像
+    models:
+      user: ユーザー
+      item: 商品
   activemodel:
     attributes: 
       purchase_address:  
@@ -43,8 +46,7 @@ ja:
         quantity_id: 数量
         token: クレジットカード情報
     models:
-      user: ユーザー
-      item: 商品
+      purchase_address: 商品購入情報
   devise:
     confirmations:
       confirmed: メールアドレスが確認できました。
