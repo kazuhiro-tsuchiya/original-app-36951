@@ -15,7 +15,6 @@ class PurchaseAddress
     validates :token
   end
 
-  #validates :size_id, presence: true, on: :
 
   def save
     purchase = Purchase.create(user_id: user_id, item_id: item_id, quantity_id: quantity_id, size_id: size_id)
