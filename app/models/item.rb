@@ -1,14 +1,11 @@
 class Item < ApplicationRecord
-  extend ActiveHash::Associations::ActiveRecordExtensions
 
   with_options presence: true do
     validates :item_name
-    validates :price
+    validates :price, numericality: { with: /\A[0-9]+\z/}
     validates :image
   end
 
-    #validates :quantity_id, numericality: { other_than: 1, message: "can't be blank" } 
-
-  #belongs_to :user
+  belongs_to :user
   has_one_attached :image
 end
