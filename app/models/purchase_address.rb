@@ -1,4 +1,5 @@
 class PurchaseAddress
+  extend ActiveHash::Associations::ActiveRecordExtensions
   include ActiveModel::Model
   attr_accessor :post_code, :area, :city, :street, :building_name, :phone_number, :quantity_id, :size_id, :user_id, :item_id, :token
 
