@@ -87,6 +87,7 @@ h2 {
   width: 450px;
   height: 100%;
   margin: 10px;
+  list-style: none;
 }
 
 .topic-image {
@@ -176,6 +177,7 @@ h2 {
 .more-items {
   display: flex;
   justify-content: center;
+  list-style: none;
 }
 
 .all-items {
@@ -222,6 +224,7 @@ h2 {
 .more-players {
   display: flex;
   justify-content: center;
+  list-style: none;
 }
 
 .all-players {
