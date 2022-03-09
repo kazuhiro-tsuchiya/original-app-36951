@@ -1,4 +1,6 @@
 class ItemsController < ApplicationController
+  before_action :move_to_signed_in
+
   def index
     @items = Item.all
   end
@@ -28,14 +30,13 @@ class ItemsController < ApplicationController
     end
   end
 
-
-
-
   private
 
   def item_params
     params.require(:item).permit(:image, :item_name, :price, :user_id).merge(user_id: current_user.id)
   end
 
-
+  def move_to_signed_in
+    redirect_to user_session_path unless user_signed_in?
+  end
 end
