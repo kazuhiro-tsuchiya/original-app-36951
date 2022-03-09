@@ -5,3 +5,4 @@ User.create!(nickname: "管理者",
              last_name: "原",
              first_name: "太郎",
              admin: true)
+             
