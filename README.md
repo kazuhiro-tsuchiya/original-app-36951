@@ -91,12 +91,19 @@ admin PASS: 制作中
 | ユーザー管理機能の実装	 |
 | Basic認証の導入	     |
 # 実装した機能についての画像やGIFおよびその説明
+トップページの全体像
 [![Image from Gyazo](https://i.gyazo.com/8c96aa4c9486e9a54b6d9df635d4d668.gif)](https://gyazo.com/8c96aa4c9486e9a54b6d9df635d4d668)
+管理者と一般ユーザーを分けるために、管理者には投稿というボタンが出るようにしています
 [![Image from Gyazo](https://i.gyazo.com/de03cbc3675b36fc2f5a80fe26cc590a.gif)](https://gyazo.com/de03cbc3675b36fc2f5a80fe26cc590a)
+必要な情報を入力するとトップページに反映されます
 [![Image from Gyazo](https://i.gyazo.com/879aad4e072c1d97d7a5f993c5906758.gif)](https://gyazo.com/879aad4e072c1d97d7a5f993c5906758)
+アイテムを選択すると管理者は削除のボタンが使えます
 [![Image from Gyazo](https://i.gyazo.com/0cc2d6e87a04002bdef4fb13330d4b21.gif)](https://gyazo.com/0cc2d6e87a04002bdef4fb13330d4b21)
+一般ユーザーでログインすると投稿ボタンは無くなります
 [![Image from Gyazo](https://i.gyazo.com/6da5f2dd623f45c77bbd1f021ddc0b8d.gif)](https://gyazo.com/6da5f2dd623f45c77bbd1f021ddc0b8d)
+削除ボタンが無くなり、購入画面に移行します。
 [![Image from Gyazo](https://i.gyazo.com/9efde183b2a1355cccde97d400d32d0d.gif)](https://gyazo.com/9efde183b2a1355cccde97d400d32d0d)
+必要な情報を入力して、購入を押すとトップページへ戻ります
 [![Image from Gyazo](https://i.gyazo.com/ff2730b998f2c40cbb387a4cad923ef5.gif)](https://gyazo.com/ff2730b998f2c40cbb387a4cad923ef5)
 # 実装予定の機能
 NEWSの詳細ページ
