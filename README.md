@@ -93,12 +93,11 @@ admin PASS: 制作中
 # 実装した機能についての画像やGIFおよびその説明
 [![Image from Gyazo](https://i.gyazo.com/8c96aa4c9486e9a54b6d9df635d4d668.gif)](https://gyazo.com/8c96aa4c9486e9a54b6d9df635d4d668)
 [![Image from Gyazo](https://i.gyazo.com/de03cbc3675b36fc2f5a80fe26cc590a.gif)](https://gyazo.com/de03cbc3675b36fc2f5a80fe26cc590a)
-[![Image from Gyazo](https://i.gyazo.com/5207927d39963ab3866a833ff49ef66e.gif)](https://gyazo.com/5207927d39963ab3866a833ff49ef66e)
+[![Image from Gyazo](https://i.gyazo.com/879aad4e072c1d97d7a5f993c5906758.gif)](https://gyazo.com/879aad4e072c1d97d7a5f993c5906758)
 [![Image from Gyazo](https://i.gyazo.com/0cc2d6e87a04002bdef4fb13330d4b21.gif)](https://gyazo.com/0cc2d6e87a04002bdef4fb13330d4b21)
 [![Image from Gyazo](https://i.gyazo.com/6da5f2dd623f45c77bbd1f021ddc0b8d.gif)](https://gyazo.com/6da5f2dd623f45c77bbd1f021ddc0b8d)
 [![Image from Gyazo](https://i.gyazo.com/9efde183b2a1355cccde97d400d32d0d.gif)](https://gyazo.com/9efde183b2a1355cccde97d400d32d0d)
 [![Image from Gyazo](https://i.gyazo.com/ff2730b998f2c40cbb387a4cad923ef5.gif)](https://gyazo.com/ff2730b998f2c40cbb387a4cad923ef5)
-[![Image from Gyazo](https://i.gyazo.com/879aad4e072c1d97d7a5f993c5906758.gif)](https://gyazo.com/879aad4e072c1d97d7a5f993c5906758)
 # 実装予定の機能
 NEWSの詳細ページ
 S3の導入
