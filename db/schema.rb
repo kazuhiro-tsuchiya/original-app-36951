@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_21_124909) do
+ActiveRecord::Schema.define(version: 2022_03_15_065631) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -46,6 +46,14 @@ ActiveRecord::Schema.define(version: 2022_02_21_124909) do
     t.index ["purchase_id"], name: "index_addresses_on_purchase_id"
   end
 
+  create_table "articles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "name"
+    t.string "text"
+    t.text "image"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "items", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "item_name", null: false
     t.integer "price", null: false
@@ -64,6 +72,15 @@ ActiveRecord::Schema.define(version: 2022_02_21_124909) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["item_id"], name: "index_purchases_on_item_id"
     t.index ["user_id"], name: "index_purchases_on_user_id"
+  end
+
+  create_table "teams", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "news_name"
+    t.string "news_title"
+    t.text "news_text"
+    t.text "news_image"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
