@@ -13,26 +13,18 @@
       <h2 class="news">
         <b>TEAM NEWS</b>
       </h2>
+      <% @teams.each do |team| %>
       <ul class='news-topics'>
         <li class="topic">
-          <%= link_to "/" do%>
-            <%= image_tag "new-player1.jpeg", class:"topic-image" %>
-            <h3 class="explain">NEWS: 新加入選手の紹介!!</h3>
-          <% end %>
-        </li>
-        <li class="topic">
-          <%= link_to "/" do%>
-            <%= image_tag "match1.jpeg", class:"topic-image"%>
-            <h3 class="explain">NEWS: Match Daysの発表!!</h3>
-          <% end %>
-        </li>
-        <li class="topic">
-          <%= link_to "/" do%>
-            <%= image_tag "team1.jpeg", class:"topic-image"%>
-            <h3 class="explain">NEWS: 新シーズンまで残り１ヶ月!!</h3>
+          <%= link_to team_path(team.id) do %>
+            <%= image_tag team.image, class:"topic-image" %>
+            <h3 class="explain">
+              NEWS: <%= team.news_title%>
+            </h3>
           <% end %>
         </li>
       </ul>
+      <% end %>
     </div>
 
     <div class="items">

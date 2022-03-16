@@ -1,9 +1,11 @@
 class Team < ApplicationRecord
+
   with_options presence: true do
-    validates :news_name
     validates :news_title
     validates :news_text
-    validates :news_image
+    validates :image
   end
 
+  belongs_to :user
+  has_one_attached :image
 end

@@ -46,14 +46,6 @@ ActiveRecord::Schema.define(version: 2022_03_15_065631) do
     t.index ["purchase_id"], name: "index_addresses_on_purchase_id"
   end
 
-  create_table "articles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "name"
-    t.string "text"
-    t.text "image"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "items", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "item_name", null: false
     t.integer "price", null: false
@@ -75,12 +67,12 @@ ActiveRecord::Schema.define(version: 2022_03_15_065631) do
   end
 
   create_table "teams", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "news_name"
-    t.string "news_title"
-    t.text "news_text"
-    t.text "news_image"
+    t.string "news_title", null: false
+    t.text "news_text", null: false
+    t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_teams_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -104,4 +96,5 @@ ActiveRecord::Schema.define(version: 2022_03_15_065631) do
   add_foreign_key "items", "users"
   add_foreign_key "purchases", "items"
   add_foreign_key "purchases", "users"
+  add_foreign_key "teams", "users"
 end

@@ -68,6 +68,7 @@
 
 .team-news {
   border-bottom: 10px solid black;
+  text-align: center;
 }
 
 h2 {
@@ -79,7 +80,7 @@ h2 {
 }
 
 .news-topics {
-  display: flex;
+  display: inline-flex;
 } 
 
 .topic {
@@ -88,6 +89,8 @@ h2 {
   height: 100%;
   margin: 10px;
   list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 .topic-image {
@@ -104,6 +107,11 @@ h2 {
   font-size: larger;
   color: black;
   padding-bottom: 30px;
+}
+
+.team-input {
+  width: 70%;
+  height: 150px;
 }
 
 .items {
