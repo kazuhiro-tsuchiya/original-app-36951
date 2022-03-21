@@ -1,5 +1,10 @@
 <%= render "devise/shared/second_header" %>
 
-
+<div class="main">
+  <div class="team-news-image">
+    <%= image_tag @team.image, class:"top-image" %>
+    <p><%= @team.news_title%></p>
+  </div>
+</div>
 
 <%= render "devise/shared/second_under" %>
