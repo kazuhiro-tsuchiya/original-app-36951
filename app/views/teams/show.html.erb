@@ -5,6 +5,9 @@
     <%= image_tag @team.image, class:"top-image" %>
     <p><%= @team.news_title%></p>
   </div>
+  <div class="team-news-explain">
+    <p><%= @team.news_text%></p>
+  </div>
 </div>
 
 <%= render "devise/shared/second_under" %>
