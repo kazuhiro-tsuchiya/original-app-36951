@@ -93,6 +93,10 @@ h2 {
   justify-content: center;
 }
 
+.topic p {
+  color: black;
+}
+
 .topic-image {
   width: 400px;
   height: 300px;

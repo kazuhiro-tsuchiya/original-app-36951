@@ -8,6 +8,7 @@
   <div class="team-news-explain">
     <p><%= @team.news_text%></p>
   </div>
+  <%= @team.updated_at.strftime("%Y-%m-%d %H:%M") %>
 </div>
 
 <%= render "devise/shared/second_under" %>

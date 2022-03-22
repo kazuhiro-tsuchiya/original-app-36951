@@ -21,6 +21,7 @@
             <h3 class="explain">
               NEWS: <%= team.news_title%>
             </h3>
+            <p><%= team.updated_at.strftime("%Y-%m-%d %H:%M") %></p>
           <% end %>
         </li>
       </ul>
