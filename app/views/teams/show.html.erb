@@ -6,9 +6,15 @@
     <p><%= @team.news_title%></p>
   </div>
   <div class="team-news-explain">
-    <p><%= @team.news_text%></p>
+    <p><%= simple_format(@team.news_text) %></p>
   </div>
   <%= @team.updated_at.strftime("%Y-%m-%d %H:%M") %>
+
+  <div class="team-user-bifurcation">
+    <% if current_user.admin? %>
+      <%= link_to "削除", team_path(@team.id), method: :delete, class:"team-destroy" %>
+    <% end %>
+  </div>
 </div>
 
 <%= render "devise/shared/second_under" %>
