@@ -1,0 +1,46 @@
+<%= render "devise/shared/second_header" %>
+
+<div class="items-sell-main">
+  <div class="item-wrap">
+    <h3 class="items-sell-title">NEWS情報を入力</h3>
+    <%= form_with model: @team, class: "item-registration", local: true do |f| %>
+
+      <%= render 'devise/shared/error_messages', model: f.object, resource: @team %>
+      
+      <div class="img-upload">
+        <div class="weight-bold-text">
+          NEWS画像
+        </div>
+        <div class="click-upload">
+          <p>
+            クリックしてファイルをアップロード
+          </p>
+          <%= f.file_field :image, id:"team-image" %>
+        </div>
+      </div>
+      
+      <div class="new-items">
+        <div class="weight-bold-text">
+          NEWS TITLE
+        </div>
+        <%= f.text_area :news_title, class:"items-text" %>
+      </div>
+
+      <div class="sell-price">
+        <div class="price-content">
+          <div class="price-text">
+            NEWSの詳細            
+          </div>
+          <%= f.text_area :news_text, class:"team-input", id:"team-detail" %>
+        </div>
+      </div>
+
+      <div class="sell-btn-contents">
+        <%= f.submit "投稿する" ,class:"sell-btn" %><br>
+        <%=link_to 'もどる', root_path, class:"back-btn" %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<%= render "devise/shared/second_under" %>

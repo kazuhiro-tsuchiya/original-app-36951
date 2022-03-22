@@ -68,6 +68,7 @@
 
 .team-news {
   border-bottom: 10px solid black;
+  text-align: center;
 }
 
 h2 {
@@ -79,7 +80,7 @@ h2 {
 }
 
 .news-topics {
-  display: flex;
+  display: inline-flex;
 } 
 
 .topic {
@@ -88,6 +89,12 @@ h2 {
   height: 100%;
   margin: 10px;
   list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.topic p {
+  color: black;
 }
 
 .topic-image {
@@ -104,6 +111,11 @@ h2 {
   font-size: larger;
   color: black;
   padding-bottom: 30px;
+}
+
+.team-input {
+  width: 70%;
+  height: 150px;
 }
 
 .items {
@@ -254,4 +266,33 @@ h2 {
   color: white;
   font-size: large;
   font-weight: bold;
+}
+
+
+
+.top-image {
+  width: 100%;
+  height: 800px;
+  vertical-align: bottom;
+}
+
+.team-news-image {
+  position:relative
+}
+
+.team-news-image p {
+  position: absolute;
+  color: white;
+  font-size: 70px;
+  text-shadow: 3px  3px 3px black;
+  top: 75%;
+  left: 5%;
+  margin:0;
+  padding:0;
+}
+
+.team-news-explain {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
 }
