@@ -2,41 +2,39 @@
 
 <div class="items-sell-main">
   <div class="item-wrap">
-    <h3 class="items-sell-title">NEWS情報を入力</h3>
-    <%= form_with model: @team, class: "item-registration", local: true do |f| %>
+    <h3 class="items-sell-title">プレイヤー情報を入力</h3>
+    <%= form_with model: @player, class: "item-registration", local: true do |f| %>
 
-      <%= render 'devise/shared/error_messages', model: f.object, resource: @team %>
+      <%= render 'devise/shared/error_messages', model: f.object, resource: @player %>
       
       <div class="img-upload">
         <div class="weight-bold-text">
-          NEWS画像
+          PLAYER画像
         </div>
         <div class="click-upload">
           <p>
             クリックしてファイルをアップロード
           </p>
-          <%= f.file_field :image, id:"team-image" %>
+          <%= f.file_field :image, id:"item-image" %>
         </div>
       </div>
       
       <div class="new-items">
         <div class="weight-bold-text">
-          NEWS TITLE
+          選手名
         </div>
-        <%= f.text_area :news_title, class:"items-text" %>
+        <%= f.text_area :player_name, class:"items-text" %>
       </div>
 
-      <div class="sell-price">
-        <div class="price-content">
-          <div class="price-text">
-            NEWSの詳細            
-          </div>
-          <%= f.text_area :news_text, class:"team-input", id:"team-detail" %>
+      <div class="new-items">
+        <div class="weight-bold-text">
+          背番号
         </div>
+        <%= f.text_area :number, class:"items-text" %>
       </div>
 
       <div class="sell-btn-contents">
-        <%= f.submit "投稿する" ,class:"sell-btn" %><br>
+        <%= f.submit "登録する" ,class:"sell-btn" %><br>
         <%=link_to 'もどる', root_path, class:"back-btn" %>
       </div>
     <% end %>
@@ -46,7 +44,7 @@
 <div class="under_bar">
   <div class="under-bar-header">
     <div class="contact-info">
-      管理者用 NEWS投稿ページ
+      管理者用 NEW PLAYER 登録ページ
     </div>
   </div>
 </div>
