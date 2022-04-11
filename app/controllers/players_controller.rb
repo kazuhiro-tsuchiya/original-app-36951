@@ -16,5 +16,11 @@ class PlayersController < ApplicationController
       render :new
     end
   end
-  
+
+  private
+
+  def player_params
+    params.require(:player).permit(:image, :player_name, :number)
+  end
+
 end

@@ -63,26 +63,18 @@
       <div class="position">
         <b>GOALKEEPERS</b>
       </div>
+      <% @players.each do |player| %>
       <ul class="players">
         <li class="player">
-          <%= link_to "/", class: "link" do %>
-            <%= image_tag "landscape1.webp", class: "player-foto"%>
-            <p class="player-name">1 : name</p>
-          <% end %>
-        </li>
-        <li class="player">
-          <%= link_to("/", class: "link") do %>
-            <%= image_tag "landscape1.webp", class: "player-foto"%>
-            <p class="player-name">13 : name</p>
-          <% end %>
-        </li>
-        <li class="player">
-          <%= link_to("/", class: "link") do %>
-            <%= image_tag "landscape1.webp", class: "player-foto"%>
-            <p class="player-name">30 : name</p>
+          <%= link_to players_path(player.id), class: "link" do %>
+            <%= image_tag player.image, class: "player-foto"%>
+            <p class="player-name">
+              <%= player.number %> : <%= player.player_name %>
+            </p>
           <% end %>
         </li>
       </ul>
+      <% end %>
 
       <div class="position">
         <b>DEFENDERS</b>

@@ -58,7 +58,6 @@ ActiveRecord::Schema.define(version: 2022_03_28_083602) do
   create_table "players", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "player_name"
     t.string "number"
-    t.text "image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

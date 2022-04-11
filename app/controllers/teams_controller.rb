@@ -2,6 +2,7 @@ class TeamsController < ApplicationController
   def index
     @items = Item.order("created_at DESC")
     @teams = Team.order("created_at DESC")
+    @players = Player.order("created_at DESC")
   end
 
   def new
