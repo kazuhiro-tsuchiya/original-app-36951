@@ -57,11 +57,13 @@
     </div>
 
     <div class="players-detail">
+
       <h2 class="team-player">
         <b>TEAM PLAYERS</b>
       </h2>
+
       <div class="position">
-        <b>GOALKEEPERS</b>
+        <b>ALL PLAYERS</b>
       </div>
       <% @players.each do |player| %>
       <ul class="players">
@@ -76,71 +78,6 @@
       </ul>
       <% end %>
 
-      <div class="position">
-        <b>DEFENDERS</b>
-      </div>
-      <ul class="players">
-        <li class="player">
-          <%= link_to("/", class: "link") do %>
-            <%= image_tag "landscape2.jpeg", class: "player-foto"%>
-            <p class="player-name">2 : name</p>
-          <% end %>
-        </li>
-        <li class="player">
-          <%= link_to("/", class: "link") do %>
-            <%= image_tag "landscape2.jpeg", class: "player-foto"%>
-            <p class="player-name">3 : name</p>
-          <% end %>
-        </li>
-        <li class="player">
-          <%= link_to("/", class: "link") do %>
-            <%= image_tag "landscape2.jpeg", class: "player-foto"%>
-            <p class="player-name">4 : name</p>
-          <% end %>
-        </li>
-        <li class="player">
-          <%= link_to("/", class: "link") do %>
-            <%= image_tag "landscape2.jpeg", class: "player-foto"%>
-            <p class="player-name">5 : name</p>
-          <% end %>
-        </li>
-        <li class="player">
-          <%= link_to("/", class: "link") do %>
-            <%= image_tag "landscape2.jpeg", class: "player-foto"%>
-            <p class="player-name">18 : name</p>
-          <% end %>
-        </li>
-      </ul>
-
-      <div class="position">
-        <b>MIDFIELDERS</b>
-      </div>
-      <ul class="players">
-        <li class="player">
-          <%= link_to("/", class: "link") do %>
-            <%= image_tag "landscape3.jpeg", class: "player-foto"%>
-            <p class="player-name">14 : name</p>
-          <% end %>
-        </li>
-        <li class="player">
-          <%= link_to("/", class: "link") do %>
-            <%= image_tag "landscape3.jpeg", class: "player-foto"%>
-            <p class="player-name">6 : name</p>
-          <% end %>
-        </li>
-      </ul>
-
-      <div class="position">
-        <b>FORWARDS</b>
-      </div>
-      <ul class="players">
-        <li class="player">
-          <%= link_to("/", class: "link") do %>
-            <%= image_tag "landscape4.webp", class: "player-foto"%>
-            <p class="player-name">10 : name</p>
-          <% end %>
-        </li>
-      </ul>
       <ul class="more-players">
         <li class="all-players">
           <%= link_to("/", class: "link") do %>
